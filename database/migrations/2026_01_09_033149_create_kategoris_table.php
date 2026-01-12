@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('kategoris', function (Blueprint $table) {
             $table->id('kategori_id');
-            $table->enum('jenis', ['pendidikan','kesiswaan']);
+            $table->enum('nama', ['fasilitas','keamanan','kebersihan', 'kesiswaan']);
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

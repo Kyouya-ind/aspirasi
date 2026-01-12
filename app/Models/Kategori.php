@@ -8,7 +8,8 @@ class Kategori extends Model
 {
     protected $primaryKey = 'kategori_id';
     protected $fillable = [
-        'jenis',
+        'nama',
+        'keterangan',
     ];
 
     public function aspirasis()
